@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  servlet.context-path: /v0.1
+logging:
+  file:
+    path: logs/
+    max-size: 10MB
+  pattern:
+    console: "%clr(%d{HH:mm:ss}){magenta} %-5level - %m%n"
+    file: "%d %-5level [%-10thread] [%-30logger{30}] - %m%n"
+  level:
+    root: info
